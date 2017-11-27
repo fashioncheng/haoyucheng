@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>砖石小鸟官网</title>
+    <link rel="stylesheet" href="砖石小鸟CSS.css">
+    <link rel="stylesheet " href="动态css.css">
+    <script src="砖石小鸟js.js"></script>
+    <script src="动态js2.js"></script>
+
+</head>
+<body>
+<!--网业最大的盒子-->
+<div id="box">
+    <!--导航栏的内容box1-->
+    <div id="nav">
+        <div id="nav_text">
+            <a>欢迎进入钻石小鸟官网</a>
+            <a href="#"> 登录</a>
+            <a href="#"> 注册</a>
+        </div>
+        <!--导航栏的内容box2-->
+        <div id="nav_text2">
+            <!--第一个盒子-->
+            <div id="box1">
+                <img src="imge/header.png" style="width: 12px" height="16px"/>
+                <a id="gwc" href="#">购物车</a>
+                <span>0</span>
+                <span id="jiantou">
+                      <img src="imge/jiantou.png" height="4" width="5"/>
+                   </span>
+            </div>
+            <!--第二个盒子-->
+            <div id="box2">
+                <a href="#">我的订单</a>
+
+            </div>
+            <!--第三个盒子-->
+            <div id="box3" onmouseover="get()" onmouseout="out()">
+                <a href="#">我的鸟巢</a>
+
+                <span id="jiantou2">
+                         <img src="imge/jiantou.png" height="4" width="5"/>
+                     </span>
+                <div id="bo" style="width: 80px ;
+                 height: 100px;
+                 background: white;
+                 position: absolute;
+                 top: 35PX;
+                 left: 175PX;
+                 position: absolute;
+                 display: none;">
+
+                    <a href="#">我的订单</a>
+
+
+                </div>
+
+            </div>
+
+            <!--第四个盒子-->
+            <div id="box4">
+                <a href="#">砖石课堂</a>
+
+            </div>
+            <!--第五个盒子-->
+            <div id="box5">
+                <a href="#">砖石手机</a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--header区域-->
+    <div id="header">
+        <div id="headerLogo">
+            <img src="imge/zsxnLogo.png" height="38" width="128"/>
+
+        </div>
+
+
+        <div id="header_right">
+
+            <form>
+                <span id="waikuang">
+                <input style="text">
+                <span id="fangdajing"> </span>
+                </span>
+            </form>
+            <div id="ldyy">
+                <a href="#">来店预约</a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!--主体导航-->
+    <div id="main_nav">
+
+
+        <div id="mainText1">
+
+            <a class="text">首页</a>
+            <a class="text" id="zhuanshi" onmouseover="xiala()" onmouseout="lala()">砖石</a>
+            <a class="text" id="hunjie" onmouseover="huaru1()" onmouseout="huachu1()">婚戒</a>
+            <a class="text" id="duijie" onmouseover="huaru2()" onmouseout="huachu2()">对戒</a>
+            <a class="text" id="peishi" onmouseover="huaru3()" onmouseout="huachu3()">配饰</a>
+            <a class="text" id="dingzhi" onmouseover="huaru4()" onmouseout="huachu4()">定制</a>
+            <a class="text" id="tiyan" onmouseover="huaru5()" onmouseout="huachu5()">体验中心</a>
+
+
+        </div>
+
+
+        <div id="mainTextRight">
+            <a class="text2">商务加盟</a>
+            <a class="text2">品牌故事</a>
+            <a class="text2">鸟巢论坛</a>
+
+        </div>
+        <!--主体导航的下拉菜单内容-->
+        <div id="zsbox">
+
+            <div id="zsboxText">
+
+                <div id="zsboxText1">
+                    <ul>
+                        <li style="font-size: 20px">砖石</li>
+                        <li><a href="#">探索砖石</a></li>
+                        <li><a href="#">30分裸砖</a></li>
+                        <li><a href="#">50分裸砖</a></li>
+                        <li><a href="#">70分裸砖</a></li>
+                        <li><a href="#">克拉砖</a></li>
+                        <li><a href="#">海淘砖石 立省15%</a></li>
+                        <li><a href="#">北极光砖石</a></li>
+                        <li><a href="#">FireCushion砖石</a></li>
+                    </ul>
+                </div>
+
+                <div id="zsboxText2">
+                    <ul>
+
+
+                        <li><a href="#">圆形</a></li>
+                        <li><a href="#">公主方</a></li>
+                        <li><a href="#">主母绿</a></li>
+                        <li><a href="#">橄榄形</a></li>
+                        <li><a href="#">椭圆形</a></li>
+                        <li><a href="#">梨形</a></li>
+                        <li><a href="#">心形</a></li>
+                    </ul>
+                </div>
+
+                <div id="xian"></div>
+
+                <div id="zsboxText3">
+                    <ul>
+
+
+                        <li><a href="#">定制一款砖戒</a></li>
+                        <li><a href="#">定制一款吊坠</a></li>
+                        <li><a href="#">砖石4C知识</a></li>
+                        <li><a href="#">砖石其他参数如何查看</a></li>
+                        <li><a href="#">砖石证书知识</a></li>
+                        <li><a href="#">增选特惠砖石专区</a></li>
+                    </ul>
+                </div>
+
+                <div id="xialaImg">
+                    <img src="imge/xialaIMg.jpg" height="262" width="611"/>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div id="hjbox">
+
+            <ul>
+
+
+                <li><a href="#">定制一款砖戒</a></li>
+                <li><a href="#">定制一款吊坠</a></li>
+                <li><a href="#">砖石4C知识</a></li>
+                <li><a href="#">砖石其他参数如何查看</a></li>
+                <li><a href="#">砖石证书知识</a></li>
+                <li><a href="#">增选特惠砖石专区</a></li>
+            </ul>
+
+
+        </div>
+        <div id="djbox"></div>
+        <div id="psbox"></div>
+        <div id="dzbox"></div>
+        <div id="tybox"></div>
+    </div>
+
+    <!--主体内容-->
+    <div id="main">
+        <div id="mainImg">
+        <img src="imge/mainIMG1.jpg" id="tu" onmouseover="yidong()" onmouseout="yikai()"/>
+
+            <span id="left"  onclick="shang()" onmouseover="yidong()" onmouseout="yikai()"></span>
+            <span id="Right" onclick="xia()" onmouseover="yidong()" onmouseout="yikai()"></span>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div id="main2">
+
+        <div id="main2Left">
+            <div id="main2LeftText">
+                <a style="font-size: 20px">设计订婚戒指</a>
+
+            </div>
+
+            <div id="main2LeftText2">
+
+
+                <img src="imge/diy_3.jpg" height="190" width="352"/>
+            </div>
+
+            <div id="main2LeftText3">
+
+                <a class="a">从挑选砖石开始</a>
+                <a class="a">从挑选款式开始</a>
+
+
+            </div>
+
+
+        </div>
+
+        <div id="main2Right">
+            <img src="imge/zhanshi.jpg" height="442" width="578"/>
+        </div>
+
+    </div>
+
+    <!--系列产品-->
+    <div id="xlcp">
+        <a style="font-size: 25px">系 列 产 品</a>
+    </div>
+
+    <!--主体内容二-->
+    <div id="mainTow">
+
+        <a href="#">推荐</a>
+        <a href="#" onmouseover="huadong()" onmouseout="likai()" id="zhuan">钻石</a>
+        <a href="#">婚戒</a>
+        <a href="#">对戒</a>
+        <a href="#">配饰</a>
+
+    </div>
+   <!--隐藏盒子 -->
+    <div id="zhuangshi">
+        <div id="mainThreeLeft_">
+
+            <img src="imge/main3IMG2.jpg" height="442" width="700"/>
+            <img src="imge/main3IMG3.jpg" height="241" width="700"/>
+        </div>
+        <div id="mainThreeRight_">
+
+            <img src="imge/main3IMG4.jpg" height="696" width="465"/>
+        </div>
+    </div>
+
+
+
+
+
+    <!--主体内容三-->
+    <div id="mainThree">
+
+        <div id="mainThreeLeft">
+
+            <img src="imge/main3Img.jpg" height="442" width="700"/>
+            <img src="imge/Img2.jpg" height="241" width="700"/>
+        </div>
+        <div id="mainThreeRight">
+
+            <img src="imge/Img3.jpg" height="696" width="465"/>
+        </div>
+
+
+    </div>
+
+    <!--婚戒推荐全球美钻-->
+    <div id="tuijian">
+
+        <a style="font-size: 25px">婚戒推荐 @ 全球美钻</a>
+
+
+    </div>
+    <!--主题区域四-->
+    <div id="mainFour">
+        <div id="mainFourJzBox">
+            <ul>
+                <li><img src="imge/jiezhi1.jpg" height="193" width="240"/></li>
+                <li><img src="imge/jiezhi2.jpg" height="193" width="240"/></li>
+                <li><img src="imge/jiezhi3.jpg" height="193" width="240"/></li>
+                <li><img src="imge/jiezhi4.jpg" height="193" width="240"/></li>
+
+            </ul>
+        </div>
+
+        <span id="mainFourLeft" >  </span>
+
+
+        <span id="mainFourRight">  </span>
+
+
+    </div>
+    <!--主题区域五-->
+    <div id="mainFive">
+
+        <div id="mainFiveBox">
+            <div id="mainFiveBoxA" class="mainFiveBox1">
+                <div id="mainFiveImg"></div>
+                <a style="font-size: 10px">Round</a>
+            </div>
+            <div class="mainFiveBox1">
+                <div id="mainFiveImg1"></div>
+                <a style="font-size: 10px">PRINCESS</a>
+            </div>
+
+
+            <div class="mainFiveBox1">
+                <div id="mainFiveImg2"></div>
+                <a style="font-size: 10px">CUSHION</a>
+            </div>
+
+            <div class="mainFiveBox1">
+                <div id="mainFiveImg3"></div>
+                <a style="font-size: 10px">EMERALE</a>
+            </div>
+
+            <div class="mainFiveBox1">
+                <div id="mainFiveImg4"></div>
+                <a style="font-size: 10px">OVAL</a>
+            </div>
+
+            <div class="mainFiveBox1">
+                <div id="mainFiveImg5"></div>
+                <a style="font-size: 10px">RADIANT</a>
+            </div>
+
+            <div class="mainFiveBox1">
+                <div id="mainFiveImg6"></div>
+                <a style="font-size: 10px">MARQUISE</a>
+            </div>
+            <div class="mainFiveBox1">
+                <div id="mainFiveImg7"></div>
+                <a style="font-size: 10px">PEAR</a>
+            </div>
+            <div class="mainFiveBox1">
+                <div id="mainFiveImg8"></div>
+                <a style="font-size: 10px">HEART</a>
+            </div>
+            <div class="mainFiveBox1">
+                <div id="mainFiveImg9"></div>
+                <a style="font-size: 10px">TRILLION</a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--主题区域六-->
+    <div id="mainSix">
+        <img id="mainSixImg1" src="imge/sixImg1.jpg" height="644" width="722"/>
+        <img id="mainSixImg2" src="imge/sixImg2.jpg"/>
+        <img id="mainSixImg3" src="imge/sixImg3.jpg" height="324" width="1180"/>
+
+
+    </div>
+    <hr id="hr">
+
+    <!--主题区域七-->
+    <div id="mainSeven">
+
+        <ul id="mainSevenUl">
+            <li class="li">北京</li>
+            <li>/</li>
+            <li class="li">上海</li>
+            <li>/</li>
+            <li class="li">杭州</li>
+            <li>/</li>
+            <li class="li">广州</li>
+            <li>/</li>
+            <li class="li">武汉</li>
+            <li>/</li>
+            <li class="li">天津</li>
+            <li>/</li>
+            <li class="li">西安</li>
+            <li>/</li>
+            <li class="li">南京</li>
+            <li>/</li>
+            <li class="li">宁波</li>
+            <li>/</li>
+            <li class="li">成都</li>
+            <li>/</li>
+            <li class="li">重庆</li>
+            <li>/</li>
+            <li class="li">合肥</li>
+            <li>/</li>
+            <li class="li">盐城</li>
+            <li>/</li>
+
+
+        </ul>
+        </br>
+        <ul id="mainSevenU2">
+
+
+            <li class="li">济宁</li>
+            <li>/</li>
+            <li class="li">常州</li>
+            <li>/</li>
+            <li class="li">盐城金鹰</li>
+            <li>/</li>
+            <li class="li">丽水</li>
+            <li>/</li>
+            <li class="li">苏州</li>
+            <li>/</li>
+            <li class="li">烟台</li>
+            <li>/</li>
+            <li class="li">南昌</li>
+            <li>/</li>
+
+
+        </ul>
+
+
+    </div>
+
+    <!--主题区域八-->
+    <div id="mainEight">
+
+        <div id="mainEightBox">
+            <div id="mainEightBox2">
+                <a id="EightBox_text">西安体验中心</a>
+                <hr id="EightBox_xian">
+            </div>
+            <a id="EightBox_a">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                王府井大街138号新东安T2办公楼7层 <br>
+                周一-周五10:30-20:30 周六-周日10:30-20:30 <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                咨询电话：010-851186550
+
+                <form>
+                    <input style="text">
+                </form>
+
+
+            </a>
+
+            <div id="mainEightBox3">
+                <a href="#">在线预约进店</a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--主题区域九-->
+    <div id="mainNine">
+
+        <div id="mainNineLeft">
+            <hr id="mainNine_xian">
+
+            <ul id="ul_1">
+                <li>资讯动态</li>
+                </br></br>
+                <li><a href="#">钻石小鸟携《时尚COSMO》解读真爱...</a></li>
+                <li><a href="#">钻石小鸟董事长徐磊获上海现代钟表珠宝...</a></li>
+                <li><a href="#">钻石小鸟合肥体验中心迎周年盛典 感恩...</a></li>
+                <li><a href="#">钻石小鸟成都体验中心九周年店庆 分享...</a></li>
+                <li><a href="#">钻石小鸟高校巡礼季 谱写闪耀的青春纪...</a></li>
+                <li><a href="#">钻石小鸟携手上海首饰设计协会 闪耀珠...</a></li>
+                </br>
+                <li><a>查看全部</a></li>
+
+            </ul>
+
+            <ul id="ul_2">
+                <li>砖石课堂</li>
+                </br></br>
+                <li><a href="#">买铂金戒指对戒</a></li>
+                <li><a href="#">钻石定制戒指多少钱</a></li>
+                <li><a href="#">世界上著名的粉钻</a></li>
+                <li><a href="#">绿幽灵佩戴禁忌及选购技巧</a></li>
+                <li><a href="#">钻戒怎么清洗？</a></li>
+                <li><a href="#">教你钻石怎么辨别真假的方法</a></li>
+                </br>
+                <li><a>查看全部</a></li>
+
+            </ul>
+
+
+            <hr id="mainNine_xian2">
+
+        </div>
+
+        <div id="mainNineRight">
+
+            <img src="imge/nine.jpg" height="324" width="480"/>
+        </div>
+
+
+    </div>
+    <!--尾部区域-->
+    <div id="footer">
+        <div id="footerHaeder">
+            <div id="footerBox1">
+                <img class="logo" src="imge/footerImg1.png" height="37" width="40"/>
+                <a href="#">全国免费配送</a>
+
+            </div>
+            <div id="footerBox2">
+                <img class="logo" src="imge/footerImg2.png" height="37" width="40"/>
+                <a href="#">商品货到付款</a>
+
+            </div>
+
+            <div id="footerBox3">
+                <img class="logo" src="imge/footerImg3.png" height="37" width="40"/>
+                <a href="#">砖石以小换大</a>
+
+            </div>
+
+            <div id="footerBox4">
+
+                <img class="logo" src="imge/footerImg4.png" height="37" width="40"/>
+                <a href="#">砖石一砖双证</a>
+            </div>
+
+            <div id="footerBox5">
+                <img class="logo" src="imge/footerImg5.png" height="37" width="40"/>
+                <a href="#">15天免费退换</a>
+
+            </div>
+
+            <div id="footerBox6">
+                <img class="logo" src="imge/footerImg6.png" height="37" width="40"/>
+                <a href="#">商品终身保养</a>
+
+            </div>
+
+        </div>
+        <hr id="foorter_xian">
+
+        <div id="footerCenter">
+
+            <img id="foorterLogo" style="float: left" src="imge/zsxnLogo.png" height="38" width="128"/>
+
+            <ul>
+                <li><a class="blank" href="#" style="color: black">关于我们</a></li>
+
+                <li><a href="#">产品简介</a></li>
+                <li><a href="#">市场合作</a></li>
+                <li><a href="#">诚聘英才</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">商务加盟</a></li>
+            </ul>
+            <ul>
+                <li><a class="blank" href="#" style="color: black">购物指南</a></li>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">订单处理时间</a></li>
+                <li><a href="#">订单查询</a></li>
+                <li><a href="#">特色商品说明</a></li>
+
+            </ul>
+            <ul>
+                <li><a class="blank" href="#" style="color: black">支付方式</a></li>
+                <li><a href="#">在线支付</a></li>
+                <li><a href="#">货到付款</a></li>
+                <li><a href="#">银行汇款</a></li>
+                <li><a href="#">海外汇款</a></li>
+
+            </ul>
+            <ul>
+                <li><a class="blank" href="#" style="color: black">配送方式</a></li>
+                <li><a href="#">体验中心自提</a></li>
+                <li><a href="#">全国免费配送</a></li>
+                <li><a href="#">海外配送</a></li>
+                <li><a href="#">货品包装</a></li>
+
+            </ul>
+            <ul>
+                <li><a class="blank" href="#" style="color: black">售后服务</a></li>
+                <li><a href="#">售后政策</a></li>
+                <li><a href="#">15天退换</a></li>
+                <li><a href="#">以小换大</a></li>
+                <li><a href="#">优惠换款</a></li>
+
+            </ul>
+
+
+            <img id="rwm" src="imge/footer7.png" height="121" width="220"/>
+        </div>
+
+
+    </div>
+
+    <div id="footer_box7">
+
+        <div id="footer_box8">
+
+            <div id="box8Left">
+                <img id="dianhua" src="imge/footer8.png" height="26" width="28"/>
+
+                <a style=" color: #666563 ;  font-size: 17px">400-800-0051</a>
+                <br>
+                <a id="zhixun" style="font-size: 10px ">咨询时间：09:00-21:00</a>
+            </div>
+
+            <div id="footerRight">
+                <a href="#">进店有礼。甜蜜不停</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footerBottom">
+
+        <ul id="ula">
+            <li>网站地图</li>
+            <li>|</li>
+            <li>友情连接</li>
+            <li>|</li>
+            <li>在线投诉</li>
+            <li>|</li>
+            <li> 沪ICP备08011593号</li>
+            <li>|</li>
+            <li style="color: #999999">Copyright © 2002-2017 www.zbird.com 钻石小鸟 All Rights Reserved.</li>
+        </ul>
+        </br>
+        <ul id="ulb">
+            <li>上海铂利德钻石有限公司 021-26011188</li>
+
+        </ul>
+        </br>
+        <ul id="ulc">
+            <li> 团购</li>
+            <li>|</li>
+            <li> 特色客栈</li>
+            <li>|</li>
+            <li>美国淘宝</li>
+            <li>|</li>
+            <li> 深圳地图</li>
+            <li>|</li>
+            <li> 生日礼物</li>
+            <li>|</li>
+            <li>女人志OnlyLady</li>
+            <li>|</li>
+            <li>白银网</li>
+            <li>|</li>
+            <li> 黄金网</li>
+            <li>|</li>
+            <li> 海淘返利</li>
+            <li>|</li>
+            <li> 海淘攻略</li>
+            <li>|</li>
+            <li>万贸网</li>
+            <li>|</li>
+            <li> 华夏收藏网</li>
+            <li>|</li>
+            <li> 翡翠</li>
+            <li>|</li>
+
+        </ul>
+
+        <ul id="uld">
+            <li>
+                <a href="#"><img src="imge/footer9.png" height="37" width="111"/></a>
+                <a href="#"><img src="imge/footer10.png" height="37" width="111"/></a>
+                <a href="#"><img src="imge/footer11.png" height="37" width="111"/></a>
+                <a href="#"><img src="imge/footer12.png" height="37" width="111"/></a>
+                <a href="#"><img src="imge/footer13.png" height="37" width="111"/></a>
+            </li>
+
+
+        </ul>
+
+
+    </div>
+
+    <div id="cebianlan">
+
+        <img id="kefuLogo" src="imge/kefuImg.png" height="95" width="88"/>
+
+        <div id="cebianlBox1"></div>
+        <div id="cebianlBox2"></div>
+        <div id="cebianlBox3"></div>
+        <div id="cebianlBox4"></div>
+    </div>
+
+
+</div>
+
+<script>
+
+    var mainFiveBoxA = document.getElementById("mainFiveBoxA");
+
+    mainFiveBoxA.onmouseover = function () {
+
+        mainFiveImg.style.backgroundPositionY = -49 + "px";
+        mainFiveImg.style.cursor = "pointer";
+
+    };
+    mainFiveBoxA.onmouseout = function () {
+
+        mainFiveImg.style.backgroundPositionY = 0 + "px";
+
+
+    }
+
+
+</script>
+
+
+</body>
+
+
+<html>

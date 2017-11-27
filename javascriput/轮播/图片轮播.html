@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 500px;
+            height: 200px;
+            float: left;
+
+        }
+
+        div {
+            width: 600px;
+            height: 200px;
+            float: left;
+            border: 1px solid orangered;
+
+        }
+
+        li {
+            width: 20px;
+            line-height: 20px;
+            border: 1px solid red;
+            text-align: center;
+            margin-bottom: 12px;
+            list-style: none;
+        }
+
+        ul {
+            float: left;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div>
+    <img id="tupian" src="imge/image1.jpg" onmouseover="ting()" onmouseout="zhou()"/>
+    <ul>
+        <li id="li1" onmouseover="tingtu(1,this)" onmouseout="out()">1</li>
+        <li id="li2" onmouseover="tingtu(2,this)" onmouseout="out()">2</li>
+        <li id="li3" onmouseover="tingtu(3,this)" onmouseout="out()">3</li>
+        <li id="li4" onmouseover="tingtu(4,this)" onmouseout="out()">4</li>
+        <li id="li5" onmouseover="tingtu(5,this)" onmouseout="out()">5</li>
+    </ul>
+
+
+</div>
+
+</body>
+<script>
+
+    window.onload = int;                                     // 第一步;当页面加载完成之后开始执行
+    var i = 1;
+    var dsq;
+
+    function int() {
+        var li1=document.getElementById("li1");
+        li1.style.background="orange";
+        dsq = window.setInterval("dong()", 1000);            // 第二步：创建一个反复性定时器、
+
+    }
+    function dong() {                                        // 第三步：调用定时器、
+        i++;
+        if (i > 5) {
+            i = 1;
+        }
+
+        var tupian = document.getElementById("tupian");        //获取图片元素
+        tupian.src = "imge/image" + i + ".jpg";//更改img对象的src属性
+        yanse();
+        var ys=document.getElementById("li"+i);
+        ys.style.background="orange";
+
+    }
+
+    function ting() {
+
+        window.clearInterval(dsq);                           //当鼠标滑过图片的时候让图片停止。
+    }
+    function zhou() {
+
+        dsq = window.setInterval("dong()", 1000);            // 当鼠标离开图片的时候继续切换。
+    }
+
+// ——————————————————————————————————————————————————---
+    function tingtu(n,m){                                    //鼠标滑过li的时候
+        i = n;
+        var tupian = document.getElementById("tupian");      //当鼠标滑过li的时候显示对应的图片
+        tupian.src = "imge/image" + n + ".jpg";
+        yanse();
+        dsq = window.clearInterval(dsq);
+        m.style.background="orange";
+    }
+    function out() {
+        dsq = setInterval("dong()", 1000);                    //当鼠标离开继续按顺序循环切换。
+    }
+
+//  ------------------------------------------------------------------------------------------------------
+    //分装把li背景初始化为白色
+    function yanse() {
+
+        for(var j =1; j<=5; j++){
+            var tupian =  document.getElementById("li"+j);
+            tupian.style.background="white";
+        }
+
+    }
+
+</script>
+
+
+</html>

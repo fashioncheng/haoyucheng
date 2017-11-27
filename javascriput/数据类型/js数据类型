@@ -1,0 +1,13 @@
+js数据类型：
+          基本数据类型
+                1   数字类型：  number ，数字
+                2   字符类型：  string，字母，汉字，符号，内容，空字符也是字符类型、
+                3     空类型：  null，表示什么都没有、
+                4     未定义：  undefined，表示没有定义、
+                5   布尔类型：  boolean   true，真   flase，假
+
+           复合数据类型：
+           对      象：     object、
+           数      组：     array、
+
+typeof:   查看数据类型

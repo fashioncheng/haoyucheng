@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box {
+            width: 307px;
+            height: 400px;
+            border: 3px solid orangered;
+            margin: 0 auto;
+            margin-top: 200px;
+            position: relative;
+
+        }
+
+        img {
+            width: 307px;
+            height: 400px;
+
+        }
+
+        #left {
+            width: 50px;
+            height: 60px;
+            position: absolute;
+            top: 170px;
+        }
+
+        #right {
+            width: 50px;
+            height: 60px;
+            position: absolute;
+            right: 0;
+            top: 170px;
+        }
+    </style>
+
+
+</head>
+<body>
+<div id="box">
+    <div>
+        <img id="imge" src="网站素材_36.jpg"/>
+
+
+    </div>
+    <button id="left"><<</button>
+    <button id="right">>></button>
+
+</div>
+
+<script>
+    var left = document.getElementById("left");
+    var right = document.getElementById("right");
+    var imge = document.getElementById("imge");
+    var arr = ["网站素材_36.jpg", "网站素材_38.jpg", "网站素材_40.jpg"];
+    var index = 0;
+
+    left.onclick = function () {
+        index--;
+
+        if (index < 0) {
+
+            index = arr.length - 1;
+
+
+        }
+
+        imge.src = arr[index];
+
+    }
+
+
+    right.onclick = function () {
+        index++;
+
+        if (index > arr.length - 1) {
+
+            index = 0;
+
+
+        }
+
+        imge.src = arr[index];
+
+    }
+
+
+</script>
+
+
+</body>
+
+
+</html>

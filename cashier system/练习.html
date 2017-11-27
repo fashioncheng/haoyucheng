@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background: #a077de;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div id="box">
+
+    <ul>
+        <li>123456</li>
+        <li>123456</li>
+        <li>123456</li>
+        <li>123456</li>
+
+    </ul>
+
+
+</div>
+
+<script>
+    var box = document.getElementById("box");
+
+    var ul = document.getElementsByTagName("ul")[0];
+
+
+    var ull = getComputedStyle(ul, null);
+
+    ul.style.listStyle = "none";
+
+
+    alert(ul.children[0].innerHTML = 456478558);
+
+
+    //    var obj =   getComputedStyle(box,null);
+    //
+    //    alert("宽"+obj.width +  "高" +obj.height );
+    //
+    //    box.style.background="red";
+
+
+</script>
+
+</body>
+</html>

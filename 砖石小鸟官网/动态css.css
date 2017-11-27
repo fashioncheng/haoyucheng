@@ -1,0 +1,164 @@
+#zsbox {
+    width: 1920px;
+    height: 330px;
+    background: white;
+    position: absolute;
+    top:165px;
+    z-index:5;
+    display: none;
+}
+
+#zsboxText {
+
+    width: 1177px;
+    height: 325px;
+    border: 0px solid darkslategray;
+    margin: 0 auto;
+
+}
+
+#zsboxText1 {
+    width: 130px;
+    height: 250px;
+    border: 0px solid orangered;
+    float: left;
+    position: relative;
+    left: -320px;
+
+}
+
+#zsboxText li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+#zsboxText li a {
+    font-size: 13px;
+    color: black;
+
+}
+
+#zsboxText2 {
+    float: left;
+    width: 130px;
+    height: 250px;
+    border: 0px solid orangered;
+    float: left;
+    position: relative;
+    left: -295px;
+    top: 56px;
+
+}
+
+#xian {
+    width: 1px;
+    height: 270px;
+    border: 1px solid lightcyan;
+    background: lightgray;
+    float: left;
+    position: relative;
+    left: -271px;
+}
+
+#zsboxText3 {
+    float: left;
+    width: 130px;
+    height: 250px;
+    border: 0px solid orangered;
+    float: left;
+    position: relative;
+    top: 56px;
+    left: -225px;
+
+}
+
+#zsboxText1 a:hover {
+    color: #f7928b;
+}
+
+#zsboxText2 li a:hover {
+    color: #f7928b;
+}
+
+#zsboxText3 li a:hover {
+    color: #f7928b;
+}
+
+#xialaImg {
+    width: 615px;
+    height: 265px;
+    float: left;
+    position: absolute;
+    top: 35px;
+    right: 365px;
+}
+
+/*_____________________________________________*/
+#hjbox {
+    width: 1920px;
+    height: 330px;
+    background: white;
+    position: relative;
+    top: 35px;
+    display: none;
+
+
+}
+
+#djbox {
+    width: 1920px;
+    height: 330px;
+    background: white;
+    position: relative;
+    top: 35px;
+    display: none;
+}
+
+#psbox {
+    width: 1920px;
+    height: 330px;
+    background: white;
+    position: relative;
+    top: 35px;
+    display: none;
+}
+
+#dzbox {
+    width: 1920px;
+    height: 330px;
+    background: white;
+    position: relative;
+    top: 35px;
+    display: none;
+}
+
+#tybox {
+    width: 1920px;
+    height: 330px;
+    background: white;
+    position: relative;
+    top: 35px;
+    display: none;
+}
+
+/*_______________________________*/
+#mainThreeLeft_ {
+    width: 700px;
+    height: 700px;
+    margin-top: 25px;
+
+}
+
+#mainThreeLeft_ img {
+    margin-bottom: 10px;
+}
+
+#mainThreeRight_ {
+    width: 465px;
+    height: 700px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}

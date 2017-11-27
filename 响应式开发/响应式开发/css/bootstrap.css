@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	margin: 0;
+}
+@media (min-width: 760px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 980px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1180px) {
+    .container {
+        width: 1170px;
+    }
+}
+.box1{
+	height: 200px;
+	background: red;
+}
+.box2{
+	height: 200px;
+	background: blue;
+}
+.box3{
+	height: 200px;
+	background: yellow;
+}
+.box4{
+	height: 200px;
+	background: pink;
+}

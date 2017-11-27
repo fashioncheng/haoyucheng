@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ÎÞ±êÌâÎÄµµ</title>
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<style>
+	fieldset{
+		width: 400px;
+		height: 260px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -150px 0 0 -200px;
+		border: 3px solid #3BCF66;
+		padding-left: 30px;
+	}
+	legend{
+		padding: 20px;
+		color: #3BCF66;
+		font-weight: bold;
+	}
+	label{
+		color: #3BCF66;
+		font-weight: bold;
+		margin-right: 10px;
+	}
+	input{
+		width: 300px;
+		height: 30px;
+		border: 3px solid #3BCF66;
+		margin: 0 0 10px 0;
+		padding: 0 10px;
+		box-sizing: border-box;
+		color: #333333;
+		font-weight: bold;
+	}
+	textarea{
+		width: 300px;
+		height: 100px;
+		border: 3px solid #3BCF66;
+		resize: none;
+		padding: 10px 10px;
+		box-sizing: border-box;
+	}
+	.focus {
+     border: 3px solid #f00;
+     background: #fcc;
+}
+</style>
+</head>
+
+<body>
+    <form action="" method="post" id="regForm">
+        <fieldset>
+            <legend>个人基本信息</legend>
+                <div>
+                    <label  for="username">名称:</label>
+                    <input id="username" type="text" value="小王"/>
+                </div>
+                <div>
+                    <label for="pass">密码:</label>
+                    <input id="pass" type="password" />
+                </div>
+                <div>
+                    <label for="msg" style="vertical-align: top;">信息:</label>
+                    <textarea id="msg" rows="2" cols="20"></textarea>
+                </div>
+        </fieldset>
+    </form>
+</body>
+<script type="text/javascript">
+//创建一个函数。
+     $(function () {
+        //:input查找所有的input，.focus获取焦点事件。
+        $(":input").focus(function () {
+            //给当前点击的input添加一个类名
+            $(this).addClass("focus");
+            if($(this).val()==this.defaultValue){
+            //那么当前的input为空
+            $(this).val("");
+            }
+            //失去焦点事件
+        }).blur(function () {
+            //给失去焦点的input移除类名
+            $(this).removeClass("focus");
+            // 判断：如果失去焦点的input值为空
+            if($(this).val()==""){
+                $(this).val(this.defaultValue);
+
+
+            }
+    })
+ })
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

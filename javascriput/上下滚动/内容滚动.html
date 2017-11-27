@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #dome {
+            width: 140px;
+            height: 150px;
+            border: 1px solid red;
+            margin: 0 auto;
+
+            overflow: hidden;
+        }
+
+        #dome2 {
+            margin-top: -30px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+<div id="dome">
+
+    <div id="dome1">
+
+        <ul style="list-style: none">
+            <li>山西钰陆科技</li>
+            <li>山西钰陆科技</li>
+            <li>山西钰陆科技</li>
+            <li>山西钰陆科技</li>
+            <li>山西钰陆科技</li>
+            <li>山西钰陆科技</li>
+
+
+
+
+        </ul>
+
+
+    </div>
+
+    <div id="dome2"></div>
+
+
+</div>
+
+<script>
+    //第一步：获取元素
+    var dome = document.getElementById("dome");
+    var dome1 = document.getElementById("dome1");
+    var dome2 = document.getElementById("dome2");
+    //第二步：让dome1的高度等于dome的高度
+    dome1.style.height = dome.offsetHeight + "px";  //offsetHeight 只获取其内容的高度。
+    //让dome2的高度等于dome的高度
+    dome2.style.height = dome.offsetHeight + "px";
+    //第三步：让dome2的内容等于dome1的内容
+    dome2.innerHTML = dome1.innerHTML;
+    //给滚动条一个计时器
+    var dsq = window.setInterval("fun()", 40);
+
+    function fun() {
+        dome.scrollTop++;
+
+        if (dome.scrollTop == dome.offsetHeight) {
+            dome.scrollTop = 0;
+        }
+
+
+    }
+    //当鼠标滑动到内容位置的时候，让内容滚动停止。
+    dome.onmousemove=function () {
+      window.clearInterval(dsq);
+    };
+    //当鼠标移开内容位置的时候，让内容继续滚动。
+    dome.onmouseout=function () {
+     dsq  =   window.setInterval("fun()", 40);
+    }
+
+</script>
+
+
+</body>
+</html>

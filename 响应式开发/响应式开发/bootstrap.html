@@ -1,0 +1,61 @@
+<!DOCTYPE html><!--规定我的文档类型是html-->
+<!--设置我的网页的语言文字是简体中文-->
+<html lang="zh-CN">
+<head>
+    <!--meta标签是head中的重要标签,他提供的信息用户看不到,但是是页面文档中的基本信息,是给浏览器后台看的,在搜索引擎优化排名中至关重要-->
+    <!--charset是设置网页字符集为utf-8,是目前网页最全的字符集,如果不写,网页会出现乱码-->
+    <meta charset="utf-8">
+    <!--处理IE兼容性作用,让IE使用最新的渲染引擎渲染界面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--viewport视口是移动虚拟端的容器 作用是让PC端的网页在移动端显示的时候不缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>响应式开发</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--自己的css必须在Bootstrap的后面-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 为了让IE8以下的浏览器支持最新的HTML5标签的元素和支持CSS3的媒体查询-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]><!--注释条件,当IE版本小于IE9时,注释条件生效-->
+    <![endif]-->
+</head>
+<body>
+<!--  头部区域 -->
+<section>
+	<div class="container">
+		<div class="row">
+			<div class=" box1 col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+			<div class=" box2 col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+			<div class=" box3 col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+			<div class=" box4 col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+		</div>
+	</div>
+</section>
+<!-- /头部区域 -->
+<!--  广告轮播 -->
+<section></section>
+<!-- /广告轮播 -->
+<!--  立即预约 -->
+<section></section>
+<!-- /立即预约 -->
+<!--  产品介绍 -->
+<section></section>
+<!-- /产品介绍 -->
+<!--  新闻资讯 -->
+<section></section>
+<!-- /新闻资讯 -->
+<!--  合作伙伴 -->
+<section></section>
+<!-- /合作伙伴 -->
+<!-- 脚注区域 -->
+<footer></footer>
+<!-- /脚注区域 -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./lib/jquery/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

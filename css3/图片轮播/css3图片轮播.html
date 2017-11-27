@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3图片轮播</title>
+    <style>
+        #box{
+            width:200px;
+            height: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            margin: auto;
+            margin-top: 100px;
+
+        }
+         #imge img{
+             width: 200px;
+             height: 200px;
+             float: left;
+         }
+
+
+        .tu{animation: yidong 5s infinite  }
+        @keyframes yidong  {
+            0%{margin-top: 0px}
+            30%{ margin-top: -200px;}
+            60%{ margin-top: -400px;}
+            100%{ margin-top: -600px;}
+
+        }
+        .tu:hover{
+            animation-play-state:paused;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+   <div id="imge" class="tu">
+    <img src="../../javascriput/Show%20photo/网站素材_36.jpg" height="480" width="320"/>
+    <img src="../../javascriput/Show%20photo/网站素材_38.jpg" height="480" width="320"/>
+    <img src="../../javascriput/Show%20photo/网站素材_40.jpg" height="480" width="320"/>
+    <img src="../../javascriput/Show%20photo/网站素材_40.jpg" height="480" width="320"/>
+   </div>
+</div>
+</body>
+</html>

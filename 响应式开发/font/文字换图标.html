@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 100px;
+            line-height: 30px;
+            background: orange;
+        }
+        a{
+            margin-left: 30px;
+        }
+        /*第一步：拷贝项目下面生成的font-face*/
+        @font-face {
+            font-family: 'iconfont';
+            src: url('iconfont.eot');
+            src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+            url('iconfont.woff') format('woff'),
+            url('iconfont.ttf') format('truetype'),
+            url('iconfont.svg#iconfont') format('svg');
+        }
+        /*第二步：定义使用iconfont的样式*/
+
+        .text{
+            font-family:"iconfont" !important;
+            font-size:16px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div id="box">
+
+    <a class="text" style="font-size: 30px;color: #3BCF66">&#xe728;</a>
+    <a class="text" style="font-size: 30px;color: #3BCF66">&#xe64b;</a>
+
+</div>
+</body>
+</html>

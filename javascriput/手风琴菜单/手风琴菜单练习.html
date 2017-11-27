@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: darkgrey;
+        }
+
+        #box {
+            width: 1480px;
+            height: 800px;
+            background: white;
+            margin: 100px auto;
+        }
+
+        li {
+            list-style: none;
+            margin-left: 0;
+            cursor: pointer;
+            float: left;
+            width: 120px;
+            height: 800px;
+            overflow: hidden;
+            transition: all 1s;
+
+        }
+
+        #box ul li:nth-child(1) {
+            background: #5bc0de
+        }
+
+        #box ul li:nth-child(2) {
+            background: orange
+        }
+
+        #box ul li:nth-child(3) {
+            background: orangered
+        }
+
+        #box ul li:nth-child(4) {
+            background: yellow
+        }
+
+        #box ul li:nth-child(5) {
+            background: blueviolet
+        }
+
+        #box ul li:nth-child(6) {
+            background: rosybrown
+        }
+
+        #boxBox1 {
+            width: 1000px;
+            height: 800px;
+            background: aqua;
+
+        }
+
+        .imge {
+            width: 1000px;
+            height: 800px;
+            display: inline-block;
+
+        }
+
+        #boxBox1 {
+            display:none;
+        }
+
+        img {
+            width: 500px;
+            margin-left: 250px;
+            margin-top: 250px;
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li id="boxBox1">
+            <span class="imge">
+
+            <img src="imge/素材 (1).png"/>
+            </span>
+
+        </li>
+        <li>
+           <span class="imge">
+
+            <img src="imge/素材 (1).png"/>
+            </span>
+
+        </li>
+        <li>
+            <span class="imge">
+
+            <img src="imge/素材 (1).png"/>
+            </span>
+
+        </li>
+        <li>
+            <span class="imge">
+
+            <img src="imge/素材 (1).png"/>
+            </span>
+
+        </li>
+        <li>
+            <span class="imge">
+
+            <img src="imge/素材 (1).png"/>
+            </span>
+
+        </li>
+        <li>
+            <span class="imge">
+
+            <img src="imge/素材 (1).png"/>
+            </span>
+
+        </li>
+    </ul>
+
+
+</div>
+<script src="jquery引入文件/jquery-1.7.1.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("li").mouseover(function () {
+            $(this).addClass("imge").siblings("li").removeClass()
+        })
+    })
+
+
+</script>
+
+
+</body>
+</html>

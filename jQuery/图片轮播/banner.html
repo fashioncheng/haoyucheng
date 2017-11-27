@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style type="text/css">
+
+
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.big{
+				width: 790px;
+				height: 340px;
+				margin: 0 auto;
+				overflow: hidden;
+				position: relative;
+			}
+			img{
+				height: 340px;
+			}
+			.right{
+				width: 38px;
+				height: 79px;
+				background: url(../../../../Desktop/11.19/images/nav_paddles_down.png) no-repeat;
+				background-position: -65px -10px;
+				position: absolute;
+				right: 14px;
+				top: 128px;
+				cursor: pointer;
+			}
+			.left{
+				width: 38px;
+				height: 79px;
+				background: url(../../../../Desktop/11.19/images/nav_paddles_down.png) no-repeat;
+				background-position: -17px -10px;
+				position: absolute;
+				left: 14px;
+				top: 128px;
+				cursor: pointer;
+			}
+			.ball_box{
+				width: 158px;
+				height: 2px;
+				position: relative;
+				bottom: 0;
+				left: 0;
+				z-index: 2;
+			}
+			.ball{
+				width: 30px;
+				height: 2px;
+				background: rgba(200,200,200,0.6);
+				float: left;
+				margin-left: 2px;
+			}
+			.ml00{
+				margin-left: 0;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="big">
+			<img src="../../../../Desktop/11.19/images/image%20(1).jpg"/>
+			<img src="../../../../Desktop/11.19/images/image%20(2).jpg"/>
+			<img src="../../../../Desktop/11.19/images/image%20(3).jpg"/>
+			<img src="../../../../Desktop/11.19/images/image%20(4).jpg"/>
+			<img src="../../../../Desktop/11.19/images/image%20(5).jpg"/>
+			<div class="box right"></div>
+			<div class="box left"></div>
+		</div>
+	</body>
+    <script type="text/javascript" src="../jquery引入文件/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript">
+
+		$("img").show();
+		$("div").hide();
+		$("this").click(function () {
+			$(".right").show();
+        })
+
+
+
+		
+	</script>
+</html>

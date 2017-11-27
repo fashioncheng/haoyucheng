@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易收银系统</title>
+</head>
+<body>
+<script>
+    var leixingTag = 0;
+    var num = 0;
+    var money = 0;
+    var sunMoney = 0;
+    var biaoqianTag = 0;
+    var moneyTag = 0;
+
+    do {
+        var leixing = prompt("本店有两类商品： \n一类是生活用品 \n一类是饮品类 （1/2）\n请选择恁要购买的类型？");
+
+        switch (leixing) {
+
+            case"1" :
+                do {
+                    var biaoqian = prompt("生活类用品有：a：卫生纸10元一个 ，b：牙刷5元一个 ，c：毛巾15元一个。请输入标签？");
+                    if (biaoqian == "a" || biaoqian == "b" || biaoqian == "c") {
+                        var num = prompt("请输入商品数量");
+
+                        if (biaoqian == "a") {
+
+                            money = num * 10;
+                            sunMoney += money;
+                        }
+
+                        if (biaoqian == "b") {
+
+                            money = num * 5;
+                            sunMoney += money;
+                        }
+
+                        if (biaoqian == "c") {
+
+                            money = num * 15;
+                            sunMoney += money;
+                        }
+
+                        var isBuy = prompt("是否继续购买？（y/n）");
+
+                        if (isBuy == "y") {
+
+                            leixingTag = 1;
+
+                        } else {
+                            do {
+                                var shifuMoney = prompt("您一共消费了：" + sunMoney + "元");
+
+                                if (shifuMoney > sunMoney) {
+                                    alert("找零：" + (shifuMoney - sunMoney) + "元");
+                                    var sisibuy = prompt("是否继续购买？（y/n）");
+
+                                    if (sisibuy == "y") {
+
+                                        leixingTag = 1;
+                                        money = 0;
+                                        sunMoney = 0;
+                                    } else {
+                                        alert("谢谢光临！")
+                                        leixingTag = 0;
+                                        money = 0;
+                                        sunMoney = 0;
+                                        biaoqianTag = 0;
+                                    }
+                                }
+
+
+                                else if (shifuMoney == sunMoney) {
+
+                                    alert("支付完成！！");
+                                    leixingTag = 0;
+                                    money = 0;
+                                    sunMoney = 0;
+                                    moneyTag = 0;
+
+                                } else {
+
+                                    alert("您的余额不足请重新支付");
+                                    moneyTag = 1;
+
+
+                                }
+                            } while (moneyTag == 1);
+
+                        }
+
+
+                    }
+                    else {
+                        alert("没有此类标签");
+                        biaoqianTag = 1;
+                    }
+
+                }
+                while (biaoqianTag == 1) ;
+
+
+            case "2":
+
+
+
+                break;
+
+            case "3":
+                leixingTag=0;
+
+
+
+                break;
+            default:
+                alert("对不起，没有此类型商品");
+                leixingTag = 1;
+                break;
+        }
+    }
+    while (leixingTag == 1) ;
+
+</script>
+
+
+</body>
+</html>
